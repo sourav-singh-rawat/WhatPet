@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatPet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj8-NC-fmf">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="WhatPet" id="eOr-GQ-Dhv">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="48a-Zz-CrX">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="onCameraButtonPressed:" destination="BYZ-38-t0r" id="UBd-mC-2uz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LwJ-yC-gFM">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LwJ-yC-gFM" firstAttribute="top" secondItem="Xj8-NC-fmf" secondAttribute="bottom" id="4SW-Xq-2tO"/>
+                            <constraint firstItem="LwJ-yC-gFM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DEP-2w-6tH"/>
+                            <constraint firstItem="Xj8-NC-fmf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IKb-UI-Ttn"/>
+                            <constraint firstItem="Xj8-NC-fmf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="U65-AP-6GH"/>
+                            <constraint firstItem="LwJ-yC-gFM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b7y-ho-gAc"/>
+                            <constraint firstItem="Xj8-NC-fmf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iud-Mo-fYW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LwJ-yC-gFM" secondAttribute="bottom" id="w8d-VP-C51"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="Xj8-NC-fmf" id="ukE-VO-xl9"/>
+                        <outlet property="selectedImagePreview" destination="LwJ-yC-gFM" id="kNi-I6-zxR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-208.69565217391306" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
